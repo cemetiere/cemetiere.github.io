@@ -1,4 +1,10 @@
-.buttonNumber {
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+.XButtons button,
+.RButtons button {
     width: 60px;
     height: 20px;
     font-size: 13px;
@@ -7,16 +13,13 @@
     border-color: rgb(255, 202, 185);
     background-color: #ffffffcc;
     cursor:pointer;
+    stroke-width: 2; 
+    stroke: #C8CCD4;
 }
-.buttonRNumber {
-    width: 60px;
-    height: 20px;
-    font-size: 13px;
-    border-radius: 5px;
-    border: 1;
-    border-color: rgb(255, 202, 185);
-    background-color: #ffffffcc;
-    cursor:pointer;
+.XButtons button:hover,
+.RButtons button:hover {
+    cursor: pointer;
+    border-color: #8338ec;
 }
 /* body{
     background-image: url(src/bg.jpg);
@@ -24,9 +27,7 @@
     background-position: top center;
     background-size: cover;
 } */
-div{
-    display: block;
-}
+
 .taskRect {
 
     /* mix-blend-mode: soft-light; */
@@ -47,7 +48,8 @@ div{
     text-align:center;
 
 }
-.X-buttons{
+.XButtons,
+.RButtons{
     margin:0 auto 5%;
 }
 /* .head{
